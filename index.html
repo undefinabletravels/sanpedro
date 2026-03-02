@@ -553,8 +553,9 @@
       Fill out the form below. I'll personally review it and connect you directly with our on-the-ground specialist in San Pedro. Response within 24 hours.
     </p>
     <div class="form-wrap">
-      <form id="buyerForm" action="https://formspree.io/f/xdalvbkn" method="POST">
-        <input type="hidden" name="_subject" value="New San Pedro Belize Buyer Inquiry"/>
+      <form id="buyerForm" name="buyer-inquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="buyer-inquiry"/>
+        <input type="hidden" name="bot-field" style="display:none"/>
         <div class="form-grid">
           <div class="form-row">
             <label>First Name</label>
